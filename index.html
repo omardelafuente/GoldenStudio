@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Probando jQuery Mobile2222222</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+<!-- PORTADA -->
+<div data-role="page" id="portada">
+<div data-role="header">
+<h1>titulo de página</h1>
+</div>
+<div data-role="content">
+<p>Fabrico guitarras de todos los colores</p>
+<p>Puedes ver <a href="#listas">las listas</a></p>
+<p>Puedes ver <a href="#galeria">mis guitarras</a></p>
+<p>Puedes <a href="#comprar" data-rel="dialog">comprar una guitarra</a></p>
+<a href="otras/navegacion.html" id ="boton" data-role="button" data-inline="true" data-theme="a">Ir a navegacion</a>
+<a href="#" id ="boton" data-role="button" data-inline="true" data-theme="b">Botón simple2</a>
+<a href="#" id ="boton" data-role="button" data-inline="true" data-theme="c">Botón simple3</a>
+<a href="#" id ="boton" data-role="button" data-inline="true" data-theme="d">Botón simple4</a>
+<p><a href="#dialogo" data-role="button" data-inline="true" data-rel="dialog" data-theme="c">Abrir
+dialogo interno</a>
+<a href="otras/dialogo2.html" data-role="button" data-inline="true" data-rel="dialog" data-theme="c">Abrir
+dialogo externo</a></p>
+<label for="slider1">Slider Simple con temas: </label>
+<input type="range" name="slider1" id="slider1" max="100" min="1" value="40" data-theme="b" datatrack-
+theme="a"/>
+
+</div>
+<div data-role="footer"  data-theme="b" style="text-align:center">
+<div data-role="navbar">
+<ul>
+<li><a href="#jq" data-icon="star" >jQuery</a></li>
+<li><a href="#jqui" data-icon="plus" data-theme="a">jQuery UI</a></li>
+<li><a href="#jqm" data-icon="grid">jQuery Mobile</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- /PORTADA -->
+<!-- GALERIA -->
+<div data-role="page" id="galeria" data-title="Galería de guitarras">
+<div data-role="header">
+<h1>Galería de fotos de mis guitarras</h1>
+<a href="#portada" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right">
+Inicio</a>
+</div>
+<div data-role="content">
+<p>Puedes ver todas mis guitarras</p>
+<input type="submit" data-role="button" value="Boton input con type submit"/>
+<p><a href="#portada">volver</a></p>
+</div>
+<div data-role="footer">
+Pie de página
+</div>
+</div>
+<!-- /GALERIA -->
+<!-- COMPRAR -->
+<div data-role="page" id="comprar" data-title="Comprar guitarras">
+<div data-role="header">
+<h1>Comprar guitarras</h1>
+</div>
+<div data-role="content">
+<p>Servicio temporalmente indisponible</p>
+<p><a href="#portada">volver</a></p>
+</div>
+<div data-role="footer">
+Pie de página
+</div>
+</div>
+<!-- /COMPRAR -->
+<!-- LISTAS -->
+<div data-role="page" id="listas" data-title="Ejemplo Listas">
+<div data-role="header">
+<h1> Tipos de listas</h1>
+</div>
+<div data-role="content">
+<ul data-role="listview" data-inset="true" data-theme="d" data-dividertheme="a">
+<li data-role="list-divider">Medios de transporte terrestres</li>
+<li><a href="#coche">Coche</a></li>
+<li data-role="list-divider">Medios de transporte Aéreos</li>
+<li><a href="#avion">Avión</a></li>
+<li><a href="#aeroplano">Aeroplano</a></li>
+</ul><br />
+<p style="text-align:center;"><a href="#portada">volver</a></p>
+</div>
+<div data-role="footer" style="text-align:center;">
+Pie de página
+</div>
+</div>
+<!-- /LISTAS -->
+<!-- CUADRO DE DIALOGO -->
+<div data-role="page" id="dialogo">
+<div data-role="header" ><h1>dialogo de ejemplo</h1></div>
+<div data-role="content">
+Este es un cuadro de dialogo sencillo que esta dentro del mismo HTML del enlace
+<a href="#" data-role="button" data-rel="back">Aceptar</a>
+</div>
+</div>
+<!-- /CUADRO DE DIALOGO -->
+</body>
+</html>
